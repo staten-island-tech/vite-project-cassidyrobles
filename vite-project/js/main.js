@@ -1,6 +1,5 @@
+import { favSongs } from "./favSongs";
 import "../styles/style.css";
-import {menu} from "./menu";
-
 document.querySelector(".btn").addEventListener("click", function () {
   if (document.body.classList.contains("cool")) {
     document.body.classList.add("warm");

@@ -1,4 +1,28 @@
-body{
-  background-color: red;
+*,
+body,
+html {
+  box-sizing: border-box;
+  text-align: center;
+  background-color: firebrick
 };
 
+#header1{
+padding: 2rem;
+}
+
+.btn{
+  
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    margin: 1rem;
+    font-size: 2rem;
+    border-radius: 6rem;
+    transition: all 0.2s;
+    position: relative;
+    animation: moveInBottom 0.5s ease-out 0.75s;
+    animation-fill-mode: backwards;
+  cursor: pointer;
+  display: flex;
+
+};
