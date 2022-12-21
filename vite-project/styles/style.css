@@ -1,33 +1,31 @@
-*,
-body,
-html {
-  box-sizing: border-box;
-  text-align: center;
-  background-color: firebrick;
-  font-size: 100px;
-  padding:0;
-  margin:0;
-};
 
-h1{
-  padding:2px;
+body{
+  background-color: purple;
 }
 
+#main{
+  width:100%;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+}
 
 .btn{
-  
-    text-transform: uppercase;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
-    border-radius: 6rem;
-    transition: all 0.2s;
-    position: relative;
-    animation: moveInBottom 0.5s ease-out 0.75s;
-    animation-fill-mode: backwards;
-    display: flex; 
-    flex-wrap: wrap; 
-    justify-content: space-evenly;
-    padding:10px;
-    align-items: center;
-};
+  text-transform: uppercase;
+  font-size: 20px;
+  border-radius: 22px;
+  transition: all 0.2s;
+  position: relative;
+  animation: ease-out 0.75s;
+  animation-fill-mode: backwards;
+  margin: 10px;
+  padding:10px;
+}
+
+h1{
+  text-align: center;
+  font-size: 50px;
+  padding:0px;
+  margin:0px;
+}
+
