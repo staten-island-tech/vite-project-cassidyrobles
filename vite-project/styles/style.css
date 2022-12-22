@@ -1,16 +1,15 @@
-
-body{
+body {
   background-color: purple;
 }
 
-#main{
-  width:100%;
-  display: flex; 
+#main {
+  width: 100%;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.btn{
+.btn {
   text-transform: uppercase;
   font-size: 20px;
   border-radius: 22px;
@@ -19,13 +18,40 @@ body{
   animation: ease-out 0.75s;
   animation-fill-mode: backwards;
   margin: 10px;
-  padding:10px;
+  padding: 10px;
 }
 
-h1{
+h1 {
   text-align: center;
   font-size: 50px;
-  padding:0px;
-  margin:0px;
+  padding: 0px;
+  margin: 0px;
 }
 
+.box{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 100px;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 5px solid white;
+  box-sizing: border-box;
+  margin: 20px;
+  border-radius: 20px;
+  background-color: #79b165;
+  text-align: center;
+  box-shadow: 0 20px 20px 10px rgba(0, 0, 0, 0.5);
+  transition: 1s ease-in;
+  line-height: 1.1;
+}
+
+
+.theimage {
+  height: 200px;
+}
