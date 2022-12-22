@@ -26,6 +26,7 @@ h1 {
   font-size: 50px;
   padding: 0px;
   margin: 0px;
+  font-family: 'Pattaya', sans-serif;
 }
 
 .box{
@@ -49,6 +50,8 @@ h1 {
   box-shadow: 0 20px 20px 10px rgba(0, 0, 0, 0.5);
   transition: 1s ease-in;
   line-height: 1.1;
+  width: 30%;
+  font-family: 'Courier Prime', monospace;
 }
 
 

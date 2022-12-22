@@ -2,18 +2,10 @@ import { favSongs } from "./favSongs";
 import "../styles/style.css";
 import { DOMselectors } from "./DOMMMM";
 
-<<<<<<< HEAD
-const DOMselectors = {
-  btn: document.querySelector(".btn"),
-  hozierbtn: document.querySelector("#hozier"),
-  tsbtn: document.querySelector("#taylor swift"),
-  ambtn: document.querySelector("#arctic monkes"),
-  displaycard: document.querySelector("display-card"),
-};
 
 
-=======
-favSongs.forEach((el)=>{
+function addCard(el) {
+
     DOMselectors.box.insertAdjacentHTML(
         "beforeend",
         `<div class="card">
@@ -22,5 +14,36 @@ favSongs.forEach((el)=>{
         <p>${el.artist}</p>
         </div>`
     );
+ };
+
+function remove () {
+  document.querySelectorAll(".card").forEach((e)=> e.remove());
+}
+
+favSongs.forEach((el)=> addCard((el)));
+
+document.getElementById("all").addEventListener("click", function () {
+  remove();
+  favSongs.forEach((el)=> addCard((el)));
 });
->>>>>>> 23c1d881ea4121f91045c704d8687cdcc98e17fb
+
+document.getElementById("taylor swift").addEventListener("click", function()  {
+  remove();
+  favSongs.forEach((el) => {
+    if(el.artist.includes("Taylor Swift")){
+    addCard(el);
+    }})});
+
+    document.getElementById("hozier").addEventListener("click", function()  {
+      remove();
+      favSongs.forEach((el) => {
+        if(el.artist.includes("Hozier")){
+        addCard(el);
+        }})});
+
+        document.getElementById("arctic monkeys").addEventListener("click", function()  {
+          remove();
+          favSongs.forEach((el) => {
+            if(el.artist.includes("Arctic Monkeys")){
+            addCard(el);
+            }})});

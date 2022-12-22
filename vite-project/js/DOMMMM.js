@@ -7,5 +7,6 @@ const DOMselectors = {
     box: document.querySelector(".box"),
   };
   
+  
   export { DOMselectors };
 
