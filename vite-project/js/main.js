@@ -47,3 +47,6 @@ document.getElementById("taylor swift").addEventListener("click", function()  {
             if(el.artist.includes("Arctic Monkeys")){
             addCard(el);
             }})});
+
+
+         

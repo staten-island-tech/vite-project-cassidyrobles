@@ -1,5 +1,5 @@
 body {
-  background-color: purple;
+  background-color: var(--primary);
 }
 
 #main {
@@ -41,11 +41,11 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 5px solid white;
+  border: 5px solid var(--fourth);
   box-sizing: border-box;
   margin: 20px;
   border-radius: 20px;
-  background-color: #79b165;
+  background-color: var(--secondary);
   text-align: center;
   box-shadow: 0 20px 20px 10px rgba(0, 0, 0, 0.5);
   transition: 1s ease-in;
@@ -60,23 +60,26 @@ h1 {
 }
 
 :root{
-color1: #33363b;
-color2: #f4ab3a;
-color3: #d36448;
-color4:#672c1c;
+--color1: #33363b;
+--color2: #f4ab3a;
+--color3: #d36448;
+--color4:#672c1c;
+--color5:#ffebf1;
+--color6:#5b95a5;
+--color7:#934ff9;
+--color8:#eb7c77;
+}
 
-color5:#212333;
-color6:#f4f4f4;
-color7:#aca16f;
-color8:#a92b2e;
+.light{
+  --primary: var(--color5);
+  --secondary: var(--color6);
+  --third: var(--color7);
+  --fourth: var(--color8);
+}
 
-color9:#eee8e4;
-color10:#222c25;
-color11:#ea4072;
-color12:#bca2ac;
-
-color13:#fff8fa;
-color14:#5b95a5;
-color15:#934ff9;
-color16:#eb7c77;
+.dark{
+  --primary: var(--color1);
+  --secondary: var(--color2);
+  --third: var(--color3);
+  --fourth: var(--color4);
 }
