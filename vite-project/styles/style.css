@@ -19,6 +19,7 @@ body {
   animation-fill-mode: backwards;
   margin: 10px;
   padding: 10px;
+  font-family: 'Righteous', cursive;
 }
 
 h1 {
@@ -26,7 +27,8 @@ h1 {
   font-size: 50px;
   padding: 0px;
   margin: 0px;
-  font-family: 'Pattaya', sans-serif;
+  font-family: 'Righteous', cursive;
+  color: var(--third);
 }
 
 .box{
